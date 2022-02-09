@@ -17,8 +17,17 @@ pip install logging mkdocs <br>
 ## 例子
 
 ### 打开视频例子
-
+```python
+    #!/usr/bin/env python3
+    print("Hello, World!");
+    ```
 ### 识别例子
-
+```python
+    #!/usr/bin/env python3
+    print("Hello, World!");
+    ```
 ### 标定采图例子
-
+```python
+    #!/usr/bin/env python3
+    print("Hello, World!");
+    ```
