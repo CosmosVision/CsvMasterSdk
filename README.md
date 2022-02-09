@@ -9,9 +9,9 @@ PyCharm community 2021.1.3 / VS 2017+
 pip install logging mkdocs
 
 ## SDK使用流程
-1.连接服务器
-2.执行相关视觉操作
-3.关闭服务器
+1.连接服务器 
+2.执行相关视觉操作 
+3.关闭服务器 
 
 
 ## 例子
