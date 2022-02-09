@@ -2,16 +2,16 @@
 三维视觉引导系统SDK
 
 ## 运行环境
-Python 3.9
-PyCharm community 2021.1.3 / VS 2017+
+Python 3.9 <br>
+PyCharm community 2021.1.3 / VS 2017+ <br>
 
 ## 运行库安装
-pip install logging mkdocs
+pip install logging mkdocs <br>
 
 ## SDK使用流程
-1.连接服务器 
-2.执行相关视觉操作 
-3.关闭服务器 
+1.连接服务器 <br>
+2.执行相关视觉操作 <br>
+3.关闭服务器 <br>
 
 
 ## 例子
