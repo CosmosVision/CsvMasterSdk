@@ -10,6 +10,7 @@
 @Copyright: Copyright@Cosmos Vision Tech.All Rights Reserved.
 '''
 
+
 class CsvPosition:
     def __init__(self, x=0, y=0, z=0, name=""):
         """
@@ -23,6 +24,7 @@ class CsvPosition:
     def isZero(self):
         if abs(self.x) < 1e-6 and abs(self.y) < 1e-6 and abs(self.z) < 1e-6:
             return True
+
 
 class CsvPose:
     def __init__(self, x=0, y=0, z=0, rx=0, ry=0, rz=0, name=""):
@@ -41,6 +43,7 @@ class CsvPose:
         if abs(self.x) < 1e-6 and abs(self.y) < 1e-6 and abs(self.z) < 1e-6 and \
                 abs(self.rx) < 1e-6 and abs(self.ry) < 1e-6 or abs(self.rz) < 1e-6:
             return True
+
 
 class CsvRecgInfo:
     def __init__(self):
@@ -76,7 +79,6 @@ class CsvPartType:
         self.Platen202 = 2002
 
 
-
 class CsvPartInfo:
     def __init__(self, part_array):
         """
@@ -92,7 +94,7 @@ class CsvPartInfo:
         self.AssembleZ = part_array[6]
         self.AssembleRX = part_array[7]
         self.AssembleRY = part_array[8]
-        self.AssembleRZ = part_array[9] + 0.5
+        self.AssembleRZ = part_array[9]
         self.SpotWeldingID = part_array[10]
         self.FullWeldingID = part_array[11]
         self.PartModel = part_array[12]
