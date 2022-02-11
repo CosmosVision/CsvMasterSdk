@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 """
-@Breif    : 标定采图例子
+@Brief    : 标定采图例子
 @Project  ：CsvMasterSdk
 @File     ：example-calibrate.py
 @Author   ：HORSETAIL

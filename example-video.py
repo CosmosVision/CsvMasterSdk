@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 """
-@Breif    : 视频控制例子
+@Brief    : 视频控制例子
 @Project  ：CsvMasterSdk
 @File     ：example-video.py
 @Author   ：HORSETAIL

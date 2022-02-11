@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 """
-@Breif    : 仅识别例子
+@Brief    : 仅识别例子
 @Project  ：CsvMasterSdk
 @File     ：example-recggrasp.py
 @Author   ：HORSETAIL

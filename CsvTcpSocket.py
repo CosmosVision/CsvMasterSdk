@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 """
-@Breif    : Socket相机连接类
+@Brief    : Socket相机连接类
 @Project  ：CsvMasterSdk
 @File     ：CsvTcpSocket.py
 @Author   ：HORSETAIL

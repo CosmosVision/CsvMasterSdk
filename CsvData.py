@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 """
-@Breif    : 常用数据类型
+@Brief    : 常用数据类型
 @Project  ：CsvMasterSdk
 @File     ：CsvData.py
 @Author   ：HORSETAIL
