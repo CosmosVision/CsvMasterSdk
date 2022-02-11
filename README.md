@@ -116,7 +116,7 @@ if __name__ == "__main__":
     '连接相机'
     cam.connect()
 
-    '执行操作：仅识别'
+    '执行操作：识别抓取'
     flange_pose = CsvPose(1000,0,2000,0,0,0)
     recg_res = cam.recgGrasp(flange_pose, "ALL")
     logging.warning("Recgnize and Grasp Result:pick id:{},modelid:{},isvalid:{}"
