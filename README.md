@@ -1,25 +1,25 @@
 # CsvMasterSdk
 三维视觉引导系统SDK。由[深圳辰视智能(Cosmos Vision)](http://www.cosmosvisiontech.com/)研发，旨在提供工业级的三维视觉引导系统SDK，可实现对视觉系统的数据获取，视觉系统控制（标定，识别，识别抓取，示教），参数设置，参数获取等功能。该SDK可与视觉系统，机器人系统，AGV系统进行无缝交互对接，可大大拓展三维视觉引导系统在智能工厂中的应用，目前该SDK已经在视觉抓取，装配焊接，涂胶引导，AGV控制等领域得到了广泛应用。
 
-## 运行环境
+## 1.运行环境
 Python 3.9 <br>
 PyCharm community 2021.1.3 ，亦可选择其他IDE，如VS Code/VS 2017+ <br>
 
-## 运行库安装
+## 2.运行库安装
 查看文档，可选择安装mkdocs,安装命令：
 ```python
 pip install logging mkdocs
 ```
 
-## SDK使用流程
-1.连接服务器 <br>
-2.执行相关视觉操作 <br>
-3.关闭服务器 <br>
+## 3.SDK使用流程
+A.连接服务器 <br>
+B.执行相关视觉操作 <br>
+C.关闭服务器 <br>
 
 
-## 例子
+## 4.例子
 
-### 打开视频例子
+### 4.1.打开视频例子
 ```python
 from CsvCamController import CsvCamController
 from CsvData import CsvPose
@@ -45,7 +45,7 @@ if __name__ == "__main__":
 ```
 
 
-### 标定采图例子
+### 4.2.标定采图例子
 ```python
 from CsvCamController import CsvCamController
 from CsvData import CsvPose
@@ -71,7 +71,7 @@ if __name__ == "__main__":
 ```
 
 
-### 识别例子
+### 4.3.识别例子
 ```python
 from CsvCamController import CsvCamController
 from CsvData import CsvPose
@@ -102,7 +102,7 @@ if __name__ == "__main__":
 ```
 
 
-### 识别抓取例子
+### 4.4.识别抓取例子
 ```python
 from CsvCamController import CsvCamController
 from CsvData import CsvPose
