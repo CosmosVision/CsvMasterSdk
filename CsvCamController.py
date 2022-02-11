@@ -14,6 +14,7 @@ import logging
 from CsvData import CsvPose, CsvRecgInfo
 from CsvTcpSocket import CsvTcpClient
 
+
 class CsvCamController:
     def __init__(self, ip="127.0.0.1", port=549002):
         """
@@ -23,7 +24,7 @@ class CsvCamController:
         """
         # 对应的视觉客户端
         self.tcp_client = CsvTcpClient(ip, port)
-        #self.cam_tcp_client.start()
+        # self.cam_tcp_client.start()
 
     def __del__(self):
         """
@@ -85,13 +86,13 @@ class CsvCamController:
             return "NO_CalShootSave"
         return "YES_CalShootSave"
 
-    def setParam(self, id , val1, val2):
+    def setParam(self, id, val1, val2):
         """
         设置视觉和相机参数
         :param id: 参数ID号
         :param val1: 设置值1
         :param val2: 设置值2
-        :return: 成功返回YES_SetParam, 失败返回NO_SetParam
+        :return: 成功返回：YES_SetParam, 失败返回：NO_SetParam
         """
         command = "SetParam,{},{},{}".format(id, val1, val2)
         self.tcp_client.send(command)
@@ -100,6 +101,31 @@ class CsvCamController:
         if recv_data.find("NO_SetParam") >= 0:
             return "NO_SetParam"
         return "YES_SetParam"
+
+    def getParam(self, id):
+        """
+        设置视觉和相机参数
+        :param id: 参数ID号
+        :return: 成功返回：[val1 val2], 失败返回:NO_SetParam
+        """
+        command = "GetParam,{}".format(id)
+        self.tcp_client.send(command)
+        recv_data = self.tcp_client.recv().strip().decode()
+
+        if recv_data.find("NO_GetParam") >= 0:
+            return "NO_GetParam"
+
+        recv_data_array = recv_data.split(',')
+
+        count = len(recv_data_array)
+        val1 = -1000000
+        val2 = -1000000
+        if count == 1:
+            val1 = float(recv_data_array[0])
+        if count == 2:
+            val1 = float(recv_data_array[0])
+            val2 = float(recv_data_array[1])
+        return [val1, val2]
 
     def switchModel(self, model_name):
         """
@@ -211,7 +237,7 @@ class CsvCamController:
 
         return recv_data
 
-    def eulerTest(self, x,y,z):
+    def eulerTest(self, x, y, z):
         """
         欧拉系统测试函数1
         :param x: 法兰x
