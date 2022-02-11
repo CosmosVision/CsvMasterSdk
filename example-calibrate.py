@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-'''
+"""
 @Breif    : 标定采图例子
 @Project  ：CsvMasterSdk
 @File     ：example-calibrate.py
@@ -8,7 +8,7 @@
 @Date     ：2022/2/9 15:49
 @Company  : Shenzhen Cosmos Vision Tech Co., Ltd
 @Copyright: Copyright@Cosmos Vision Tech.All Rights Reserved.
-'''
+"""
 
 from CsvCamController import CsvCamController
 from CsvData import CsvPose

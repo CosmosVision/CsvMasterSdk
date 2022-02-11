@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-'''
+"""
 @Breif    : Socket相机连接类
 @Project  ：CsvMasterSdk
 @File     ：CsvTcpSocket.py
@@ -8,7 +8,7 @@
 @Date     ：2022/2/9 15:49
 @Company  : Shenzhen Cosmos Vision Tech Co., Ltd
 @Copyright: Copyright@Cosmos Vision Tech.All Rights Reserved.
-'''
+"""
 import datetime
 import logging
 import socket

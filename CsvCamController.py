@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-'''
-@Breif    : 相机控制类
+"""
+@Brief    : 相机控制类
 @Project  ：CsvMasterSdk
 @File     ：CsvCamController.py
 @Author   ：HORSETAIL
 @Date     ：2022/2/9 15:49
 @Company  : Shenzhen Cosmos Vision Tech Co., Ltd
 @Copyright: Copyright@Cosmos Vision Tech.All Rights Reserved.
-'''
+"""
 
 import logging
 from CsvData import CsvPose, CsvRecgInfo

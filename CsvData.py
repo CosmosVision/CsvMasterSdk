@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-'''
+"""
 @Breif    : 常用数据类型
 @Project  ：CsvMasterSdk
 @File     ：CsvData.py
@@ -8,7 +8,7 @@
 @Date     ：2022/2/9 15:49
 @Company  : Shenzhen Cosmos Vision Tech Co., Ltd
 @Copyright: Copyright@Cosmos Vision Tech.All Rights Reserved.
-'''
+"""
 
 
 class CsvPosition:
