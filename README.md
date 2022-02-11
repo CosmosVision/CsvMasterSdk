@@ -8,7 +8,7 @@ PyCharm community 2021.1.3 ，亦可选择其他IDE，如VS Code/VS 2017+ <br>
 ## 运行库安装
 查看文档，可选择安装mkdocs,安装命令：
 ```python
-pip install logging mkdocs <br>
+pip install logging mkdocs
 ```
 
 ## SDK使用流程
